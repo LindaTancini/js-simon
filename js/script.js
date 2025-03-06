@@ -18,6 +18,9 @@ const timer = setInterval(function () {
   } else {
     clearInterval(timer);
     console.log("tempo scaduto");
+    // Finito il tempo, rimuove i numeri random generati e bisogna indovinarli
+    numberElement.classList.add("d-none");
+    answersElement.classList.remove("d-none");
   }
 }, 1000);
 
