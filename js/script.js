@@ -44,3 +44,10 @@ generateNumbers();
 numberElement.innerHTML += `<li>${numbers}</li>`;
 
 // UTENTE INSERISCE I NUMERI
+const input = inputElement.value;
+console.log(input);
+if (input === generateNumber) {
+  console.log("Hai indovinato");
+} else {
+  console.log("Non hai indovinato");
+}
