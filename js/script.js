@@ -20,3 +20,10 @@ const timer = setInterval(function () {
     console.log("tempo scaduto");
   }
 }, 1000);
+
+// CREO NUMERI CASUALI DA 1 A 50
+function generateNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+let randomNum = generateNumber(1, 50);
+console.log(randomNum);
