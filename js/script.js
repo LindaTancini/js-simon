@@ -33,5 +33,6 @@ function generateNumbers() {
     numbers.push(generateNumber(1, 50));
   }
 }
+// METTO I NUMERI RANDOM IN PAGINA
 generateNumbers();
-console.log(numbers);
+numberElement.innerHTML += `<li>${numbers}</li>`;
