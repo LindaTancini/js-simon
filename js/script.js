@@ -25,5 +25,13 @@ const timer = setInterval(function () {
 function generateNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-let randomNum = generateNumber(1, 50);
-console.log(randomNum);
+// GENERO 5 NUMERI
+let numbers;
+function generateNumbers() {
+  numbers = []; // array che contiene numeri casuali da 1 a 50
+  for (let i = 0; i < 5; i++) {
+    numbers.push(generateNumber(1, 50));
+  }
+}
+generateNumbers();
+console.log(numbers);
