@@ -8,6 +8,9 @@ console.log(numberElement);
 // ID ANSWERS-FORM
 const answersElement = document.getElementById("answers-form");
 console.log(answersElement);
+// TAG INPUT
+const inputElement = document.querySelectorAll("input");
+console.log(inputElement);
 
 // CREO IL TIMER DI 30 SECONDI SCENDENDO A 0
 let timeLeft = 30;
@@ -39,3 +42,5 @@ function generateNumbers() {
 // METTO I NUMERI RANDOM IN PAGINA
 generateNumbers();
 numberElement.innerHTML += `<li>${numbers}</li>`;
+
+// UTENTE INSERISCE I NUMERI
